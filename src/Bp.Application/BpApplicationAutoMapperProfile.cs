@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using Bp.Domain;
+using Bp.Dtos;
 
 namespace Bp
 {
@@ -6,9 +8,7 @@ namespace Bp
     {
         public BpApplicationAutoMapperProfile()
         {
-            /* You can configure your AutoMapper mapping configuration here.
-             * Alternatively, you can split your mapping configurations
-             * into multiple profile classes for a better organization. */
+            CreateMap<Article, ArticleDto>();
         }
     }
 }
