@@ -1,5 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Bp.Domain;
+using Microsoft.EntityFrameworkCore;
 using Volo.Abp;
+using Volo.Abp.EntityFrameworkCore.Modeling;
 
 namespace Bp.EntityFrameworkCore
 {
@@ -9,14 +11,13 @@ namespace Bp.EntityFrameworkCore
         {
             Check.NotNull(builder, nameof(builder));
 
-            /* Configure your own tables/entities inside here */
 
-            //builder.Entity<YourEntity>(b =>
-            //{
-            //    b.ToTable(BpConsts.DbTablePrefix + "YourEntities", BpConsts.DbSchema);
-            //    b.ConfigureByConvention(); //auto configure for the base class props
-            //    //...
-            //});
+            builder.Entity<Article>(b =>
+            {
+                b.ToTable(BpConsts.DbTablePrefix + "Articles", BpConsts.DbSchema);
+                b.ConfigureByConvention(); //auto configure for the base class props
+                b.Property(x => x.Title).IsRequired().HasMaxLength(1024);
+            });
         }
     }
 }

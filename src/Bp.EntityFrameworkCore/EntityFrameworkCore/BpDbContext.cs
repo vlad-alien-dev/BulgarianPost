@@ -5,26 +5,17 @@ using Volo.Abp.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore.Modeling;
 using Volo.Abp.Identity;
 using Volo.Abp.Users.EntityFrameworkCore;
+using Bp.Domain;
 
 namespace Bp.EntityFrameworkCore
 {
-    /* This is your actual DbContext used on runtime.
-     * It includes only your entities.
-     * It does not include entities of the used modules, because each module has already
-     * its own DbContext class. If you want to share some database tables with the used modules,
-     * just create a structure like done for AppUser.
-     *
-     * Don't use this DbContext for database migrations since it does not contain tables of the
-     * used modules (as explained above). See BpMigrationsDbContext for migrations.
-     */
+
     [ConnectionStringName("Default")]
     public class BpDbContext : AbpDbContext<BpDbContext>
     {
         public DbSet<AppUser> Users { get; set; }
+        public DbSet<Article> Articles { get; set; }
 
-        /* Add DbSet properties for your Aggregate Roots / Entities here.
-         * Also map them inside BpDbContextModelCreatingExtensions.ConfigureBp
-         */
 
         public BpDbContext(DbContextOptions<BpDbContext> options)
             : base(options)

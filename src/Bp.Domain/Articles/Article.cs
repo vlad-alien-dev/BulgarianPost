@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Volo.Abp.Domain.Entities.Auditing;
 
-namespace Bp.Articles
+namespace Bp.Domain
 {
     public class Article : AuditedAggregateRoot<Guid>
     {
