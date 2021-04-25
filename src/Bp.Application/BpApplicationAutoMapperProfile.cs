@@ -9,6 +9,7 @@ namespace Bp
         public BpApplicationAutoMapperProfile()
         {
             CreateMap<Article, ArticleDto>();
+            CreateMap<CreateUpdateArticleDto, Article>();
         }
     }
 }
