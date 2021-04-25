@@ -1,0 +1,17 @@
+﻿@page
+@using Bp.Localization
+@using Microsoft.Extensions.Localization
+@model Bp.Web.Pages.Articles.ArticlesModel
+@inject IStringLocalizer<BpResource> L
+@section scripts
+{
+    <abp-script src="/Pages/Articles/Index.js" />
+}
+<h1>Articles</h1>
+<abp-card>
+    <abp-card-header>@L["Articles"]</abp-card-header>
+    <abp-card-body>
+        <abp-table striped-rows="true" id="ArticlesTable"></abp-table>
+    </abp-card-body>
+
+</abp-card>

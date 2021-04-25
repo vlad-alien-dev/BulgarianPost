@@ -33,7 +33,19 @@ namespace Bp.Web.Menus
                     order: 0
                 )
             );
-            
+            context.Menu.AddItem(
+                new ApplicationMenuItem(
+                    name: "ArticlesArchive",
+                    displayName: l["Menu:ArticlesArchive"],
+                    icon: "fa fa-book"
+                    ).AddItem(
+                        new ApplicationMenuItem(
+                        name: "ArticlesArchive.Articles",
+                        displayName: l["Menu:Articles"],
+                        url:"/Articles")
+                    )
+                );
+
             if (MultiTenancyConsts.IsEnabled)
             {
                 administration.SetSubItemOrder(TenantManagementMenuNames.GroupName, 1);
