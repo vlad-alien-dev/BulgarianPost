@@ -5,7 +5,9 @@
     "Menu:Articles": "Articles",
     "Welcome": "Welcome",
     "LongWelcomeMessage": "Welcome to the application. This is a startup project based on the ABP framework. For more information, visit abp.io.",
+    "Export to excel": "Export to excel",
+    "Articles": "Articles",
     "Author": "Author",
-    "Title":  "Title"
+    "Title": "Title"
   }
 }
