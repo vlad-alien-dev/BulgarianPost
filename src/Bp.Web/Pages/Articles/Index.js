@@ -2,9 +2,9 @@
     var l = abp.localization.getResource('Bp');
     var dataTable = $('#ArticlesTable').DataTable(
         abp.libs.datatables.normalizeConfiguration({
-            serverSide: false,
+            serverSide: true,
             paging: true,
-            order: [[1, "asc"]],
+            order: [[1, "desc"]],
             searching: false,
             scrollX: true,
             dom: 'Bfrtip',

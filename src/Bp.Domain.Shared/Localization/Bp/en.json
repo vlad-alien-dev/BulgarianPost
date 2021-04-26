@@ -2,12 +2,14 @@
   "culture": "en",
   "texts": {
     "Menu:Home": "Home",
+    "Menu:ArticlesArchive": "News archive",
     "Menu:Articles": "Articles",
     "Welcome": "Welcome",
-    "LongWelcomeMessage": "Welcome to the application. This is a startup project based on the ABP framework. For more information, visit abp.io.",
+    "LongWelcomeMessage": "Welcome to Bulgarian Post. Follow the link below to read the newest stories.",
     "Export to excel": "Export to excel",
     "Articles": "Articles",
     "Author": "Author",
-    "Title": "Title"
+    "Title": "Title",
+    "To The News!": "To The News!"
   }
 }

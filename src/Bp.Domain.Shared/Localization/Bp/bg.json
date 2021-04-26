@@ -1,13 +1,15 @@
 ﻿{
   "culture": "bg",
   "texts": {
-    "Menu:Home": "Home",
+    "Menu:Home": "Начало",
+    "Menu:ArticlesArchive": "Aрхив новини",
     "Menu:Articles": "Статии",
     "Welcome": "Welcome",
-    "LongWelcomeMessage": "Welcome to the application. This is a startup project based on the ABP framework. For more information, visit abp.io.",
+    "LongWelcomeMessage": "Добре дошли в Bulgarian Post. Натиснете линка долу и се запознайте с последните новини от България.",
     "Export to excel": "Експортирай в ексел",
     "Articles": "Статии",
     "Author": "Автор",
-    "Title": "Заглавие"
+    "Title": "Заглавие",
+    "To The News!": "Към новините!"
   }
 }
