@@ -6,7 +6,7 @@ using Volo.Abp.Application.Services;
 
 namespace Bp
 {
-    /* Inherit your application services from this class.
+    /* Inherit application services from this class.
      */
     public abstract class BpAppService : ApplicationService
     {
